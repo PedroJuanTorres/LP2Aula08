@@ -19,14 +19,7 @@ namespace ExtendString
 
             foreach (char c in s)
             {
-                if (rnd.NextDouble() < 0.5)
-                {
-                    newString.Append(char.ToLower(c));
-                }
-                else
-                {
-                    newString.Append(char.ToUpper(c));
-                }
+                newString.Append(rnd.NextDouble() < 0.5 ? char.ToLower(c) : char.ToUpper(c));
             }
 
             return newString.ToString();
