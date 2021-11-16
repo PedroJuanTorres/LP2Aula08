@@ -15,7 +15,7 @@ namespace ExtendString
         }
         public static string ToRandomCase(this string s)
         {
-            StringBuilder newString = new StringBuilder("", 50);
+            StringBuilder newString = new StringBuilder(100);
 
             foreach (char c in s)
             {
